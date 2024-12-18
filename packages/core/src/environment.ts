@@ -100,9 +100,9 @@ export const CharacterSchema = z.object({
             TWITTER_PASSWORD: z.string().optional(),
             TWITTER_EMAIL: z.string().optional(),
             TWITTER_COOKIES: z.string().optional(),
-            MAX_TWEET_LENGTH: z
-                .string()
-                .optional()
+            MAX_TWEET_LENGTH: z.string().optional(),
+            POST_INTERVAL_MIN: z.string().optional(),
+            POST_INTERVAL_MAX: z.string().optional()
         })
         .optional(),
     clientConfig: z
